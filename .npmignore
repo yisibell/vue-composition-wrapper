@@ -1,0 +1,17 @@
+docs/
+src/
+tsconfig.json
+
+yarn.lock
+.gitignore
+
+example/
+node_modules/
+
+# build config
+rollup.config.js
+webpack.config.js
+
+# registry
+.npmrc
+.yarnrc
