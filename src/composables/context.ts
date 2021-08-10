@@ -1,4 +1,3 @@
-
 import { computed } from '@vue/composition-api'
 import { getCurrentInstance } from './utils'
 
@@ -25,7 +24,7 @@ const useContext = () => {
     router: vm.$router,
     route: computed(() => vm.$route),
     query: computed(() => vm.$route.query),
-    params: computed(() => vm.$route.params)
+    params: computed(() => vm.$route.params),
   }
 }
 

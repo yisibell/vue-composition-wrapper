@@ -32,14 +32,18 @@
     "rollup": "^2.48.0",
     "rollup-plugin-terser": "^7.0.2",
     "tslib": "^2.2.0",
-    "typescript": "^4.2.4"
+    "typescript": "^4.2.4",
+    "vue": "^2.6.14",
+    "vue-router": "^3.5.2",
+    "vuex": "^3.6.2"
   },
   "engines": {
     "node": ">=12.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@vue/composition-api": "^1.1.0"
+  },
   "peerDependencies": {
-    "@vue/composition-api": "^1.0.6",
     "vue": "^2.6.14"
   }
 }
