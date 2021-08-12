@@ -5,7 +5,7 @@
 </template>
 
 <script>
-// import myWrapper from 'vue-template-compiler'
+import { ref } from '@vue/composition-api'
 
 export default {
   name: 'HelloWorld',
@@ -13,7 +13,7 @@ export default {
     msg: String
   },
   created() {
-    console.log(66);
+    console.log(ref);
   }
 }
 </script>
