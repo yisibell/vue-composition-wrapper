@@ -111,14 +111,14 @@
 </template>
 
 <script>
-import { useContext } from 'vue-composition-wrapper'
+import { ref } from 'vue-composition-wrapper'
 export default {
   name: 'HelloWorld',
   props: {
     msg: String,
   },
   created() {
-    console.log(useContext)
+    console.log(ref)
   },
 }
 </script>
