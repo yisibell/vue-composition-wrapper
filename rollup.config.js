@@ -1,7 +1,7 @@
 import typescript from '@rollup/plugin-typescript'
-// import commonjs from "@rollup/plugin-commonjs";
+import commonjs from '@rollup/plugin-commonjs'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
-// import { terser } from 'rollup-plugin-terser'
+import { terser } from 'rollup-plugin-terser'
 import pkg from './package.json'
 
 export default {
@@ -19,8 +19,8 @@ export default {
   ],
   plugins: [
     nodeResolve(),
-    // commonjs(),
+    commonjs(),
     typescript(), // so Rollup can convert TypeScript to JavaScript
-    // terser(),
+    terser(),
   ],
 }

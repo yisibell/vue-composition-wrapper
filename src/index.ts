@@ -7,3 +7,4 @@ import {
 } from './composables/wrappers'
 
 export { useContext, wrapProperty, useRoute, useRouter, useStore }
+export * from '@vue/composition-api'
