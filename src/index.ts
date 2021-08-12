@@ -9,4 +9,4 @@ export {
 
 export { useContext }
 
-export * from '@vue/composition-api'
+export * from './composables/vue'
