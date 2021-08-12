@@ -11,12 +11,16 @@ export default {
       name: 'VueCompositionWrapper',
       file: pkg.main,
       format: 'umd',
+      globals: {
+        vue: 'Vue',
+      },
     },
     {
       file: pkg.module,
       format: 'es',
     },
   ],
+  external: ['vue'],
   plugins: [
     nodeResolve(),
     commonjs(),
