@@ -39,14 +39,15 @@
     "typescript": "^4.2.4",
     "vue": "~2.6.14",
     "vue-router": "^3.5.2",
-    "vuex": "^3.6.2",
-    "@vue/composition-api": "^1.1.0"
+    "vuex": "^3.6.2"
   },
   "peerDependencies": {
-    "vue": "~2.6.14",
-    "@vue/composition-api": "^1.1.0"
+    "vue": "~2.6.14"
   },
   "engines": {
     "node": ">=12.0"
+  },
+  "dependencies": {
+    "@vue/composition-api": "^1.1.0"
   }
 }

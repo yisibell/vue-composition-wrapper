@@ -1658,8 +1658,8 @@
 
 "@vue/composition-api@^1.1.0":
   version "1.1.0"
-  resolved "https://registry.nlark.com/@vue/composition-api/download/@vue/composition-api-1.1.0.tgz#484e7e3bbc516ad6a9b0a9967d316325c239539e"
-  integrity sha1-SE5+O7xRatapsKmWfTFjJcI5U54=
+  resolved "https://registry.yarnpkg.com/@vue/composition-api/-/composition-api-1.1.0.tgz#484e7e3bbc516ad6a9b0a9967d316325c239539e"
+  integrity sha512-9TMJliVFByhfEJjqM+Ymu9ImVrUnrT/Y2S7Fz8EsQ1MbggbE0o8Ohvk9XqK2UIOp8w68f7goVX+6h6O78iRsJQ==
   dependencies:
     tslib "^2.3.0"
 
@@ -9536,8 +9536,8 @@ tslib@^1.9.0:
 
 tslib@^2.3.0:
   version "2.3.1"
-  resolved "https://registry.nlark.com/tslib/download/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
-  integrity sha1-6KM1rdXOrlGqJh0ypJAVjvBC7wE=
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
+  integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
 
 tty-browserify@0.0.0:
   version "0.0.0"
@@ -9841,12 +9841,10 @@ vm-browserify@^1.0.1:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
 
-vue-composition-wrapper@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/vue-composition-wrapper/-/vue-composition-wrapper-1.1.1.tgz#ba87b1220349a56c9da12c45ab8f1cee2605b5ba"
-  integrity sha512-gLT3cuO65VHIgx1SWqO+hPG12z7VRVHwvnn+wzSeAAyBxA5RG6/MMn5IeU/ROpWySefsMjgLiFMtFpm7g4lTRQ==
-  dependencies:
-    "@vue/composition-api" "^1.1.0"
+vue-composition-wrapper@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/vue-composition-wrapper/-/vue-composition-wrapper-1.2.0.tgz#6d84b1693c147ec72e4362f52ddac07fd104553e"
+  integrity sha512-Gm7RmL3c9ye8o3SBDqLbp75J3foX6ticrhjaoKAb7yWAJiJeQfB9w8XH4x878JHoZDbwmPgwDqztabfM1pSwgw==
 
 vue-eslint-parser@^7.0.0:
   version "7.10.0"

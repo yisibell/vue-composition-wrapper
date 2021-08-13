@@ -6,7 +6,7 @@ import pkg from './package.json'
 
 export default {
   input: 'src/index.ts',
-  external: ['vue', '@vue/compositiom-api'],
+  external: ['vue'],
   plugins: [
     nodeResolve(),
     commonjs(),
