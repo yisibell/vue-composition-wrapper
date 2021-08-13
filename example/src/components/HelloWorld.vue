@@ -111,17 +111,14 @@
 </template>
 
 <script>
-import * as foo from 'vue-composition-wrapper'
+import { defineComponent } from 'vue-composition-wrapper'
 
-export default {
+export default defineComponent({
   name: 'HelloWorld',
   props: {
     msg: String,
   },
-  created() {
-    console.log(foo)
-  },
-}
+})
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
