@@ -9841,10 +9841,12 @@ vm-browserify@^1.0.1:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
 
-vue-composition-wrapper@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/vue-composition-wrapper/-/vue-composition-wrapper-1.2.0.tgz#6d84b1693c147ec72e4362f52ddac07fd104553e"
-  integrity sha512-Gm7RmL3c9ye8o3SBDqLbp75J3foX6ticrhjaoKAb7yWAJiJeQfB9w8XH4x878JHoZDbwmPgwDqztabfM1pSwgw==
+vue-composition-wrapper@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/vue-composition-wrapper/-/vue-composition-wrapper-1.2.1.tgz#ebb4acfc45767b11afedd97cd591675a898668f7"
+  integrity sha512-6hRYqnAwshXLt9L605q79kgRYW9AwiNKNf6CVu1pU5rbvG0BwQuxSFlwWN1toupHz1casAc6QicBLeF5ws8MUg==
+  dependencies:
+    "@vue/composition-api" "^1.1.0"
 
 vue-eslint-parser@^7.0.0:
   version "7.10.0"

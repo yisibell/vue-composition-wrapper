@@ -29,6 +29,9 @@
     "url": "https://github.com/yisibell/vue-composition-wrapper.git"
   },
   "homepage": "https://github.com/yisibell/vue-composition-wrapper",
+  "dependencies": {
+    "@vue/composition-api": "^1.1.0"
+  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^19.0.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
@@ -46,8 +49,5 @@
   },
   "engines": {
     "node": ">=12.0"
-  },
-  "dependencies": {
-    "@vue/composition-api": "^1.1.0"
   }
 }

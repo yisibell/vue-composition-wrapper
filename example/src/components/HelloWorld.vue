@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { useContext } from 'vue-composition-wrapper'
+import foo from 'vue-composition-wrapper'
 import {
   defineComponent,
   computed,
@@ -20,12 +20,12 @@ export default defineComponent({
   },
   setup(props) {
     const { msg } = toRefs(props)
-    const { app } = useContext()
+    
 
     const newMsg = computed(() => `${msg.value} vue composition`)
 
     onMounted(() => {
-      console.log(app)
+      console.log(666, foo)
     })
 
     return {
