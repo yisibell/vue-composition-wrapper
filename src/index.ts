@@ -6,6 +6,5 @@ import {
   useStore,
 } from './composables/wrappers'
 
-export * from '@vue/composition-api'
-
 export { useContext, wrapProperty, useRoute, useRouter, useStore }
+

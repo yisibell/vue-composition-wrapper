@@ -1,11 +1,13 @@
 docs/
-src/
 tsconfig.json
-
 yarn.lock
 .gitignore
+src/
 
+# demo
 example/
+
+# dependencies
 node_modules/
 
 # build config
