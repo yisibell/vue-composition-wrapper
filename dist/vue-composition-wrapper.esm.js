@@ -1,4 +1,5 @@
 import { getCurrentInstance as getCurrentInstance$1, computed } from '@vue/composition-api';
+export * from '@vue/composition-api';
 
 function getCurrentInstance() {
     var vm = getCurrentInstance$1();

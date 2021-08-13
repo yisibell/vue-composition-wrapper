@@ -49,3 +49,11 @@ exports.useRoute = useRoute;
 exports.useRouter = useRouter;
 exports.useStore = useStore;
 exports.wrapProperty = wrapProperty;
+Object.keys(compositionApi).forEach(function (k) {
+    if (k !== 'default' && !exports.hasOwnProperty(k)) Object.defineProperty(exports, k, {
+        enumerable: true,
+        get: function () {
+            return compositionApi[k];
+        }
+    });
+});
