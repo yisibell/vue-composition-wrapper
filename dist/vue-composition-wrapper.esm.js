@@ -1,1 +1,43 @@
-import{getCurrentInstance as r,computed as t}from"@vue/composition-api";function n(){var t=r();if(t)return t.proxy}var e=function(){var r=n();if(!r)throw new Error("This must be called within a setup function.");return{app:r,store:r.$store,router:r.$router,route:t((function(){return r.$route})),query:t((function(){return r.$route.query})),params:t((function(){return r.$route.params}))}},u=function(r,e){return function(){var u=n();if(!u)throw new Error("This must be called within a setup function.");return!1!==e?t((function(){return u[r]})):u[r]}},o=u("$router",!1),i=u("$route"),a=function(r){var t=n();if(!t)throw new Error("This must be called within a setup function.");return t.$store};export{e as useContext,i as useRoute,o as useRouter,a as useStore,u as wrapProperty};
+import { getCurrentInstance as getCurrentInstance$1, computed } from '@vue/composition-api';
+
+function getCurrentInstance() {
+    var vm = getCurrentInstance$1();
+    if (!vm)
+        return;
+    return vm.proxy;
+}
+
+var useContext = function () {
+    var vm = getCurrentInstance();
+    if (!vm)
+        throw new Error('This must be called within a setup function.');
+    return {
+        app: vm,
+        store: vm.$store,
+        router: vm.$router,
+        route: computed(function () { return vm.$route; }),
+        query: computed(function () { return vm.$route.query; }),
+        params: computed(function () { return vm.$route.params; }),
+    };
+};
+
+var wrapProperty = function (property, makeComputed) {
+    return function () {
+        var vm = getCurrentInstance();
+        if (!vm)
+            throw new Error('This must be called within a setup function.');
+        return makeComputed !== false
+            ? computed(function () { return vm[property]; })
+            : vm[property];
+    };
+};
+var useRouter = wrapProperty('$router', false);
+var useRoute = wrapProperty('$route');
+var useStore = function (key) {
+    var vm = getCurrentInstance();
+    if (!vm)
+        throw new Error('This must be called within a setup function.');
+    return vm.$store;
+};
+
+export { useContext, useRoute, useRouter, useStore, wrapProperty };

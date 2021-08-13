@@ -1,10 +1,9 @@
 import useContext from './composables/context'
-
-export {
+import {
   wrapProperty,
   useRoute,
   useRouter,
   useStore,
 } from './composables/wrappers'
 
-export { useContext }
+export { useContext, wrapProperty, useRoute, useRouter, useStore }
