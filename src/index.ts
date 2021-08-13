@@ -1,9 +1,5 @@
 import useContext from './composables/context'
 
-import installer from './installer'
-
-export * from '@vue/composition-api'
-
 export {
   wrapProperty,
   useRoute,
@@ -11,4 +7,4 @@ export {
   useStore,
 } from './composables/wrappers'
 
-export { installer, useContext }
+export { useContext }
