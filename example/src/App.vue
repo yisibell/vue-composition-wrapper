@@ -1,12 +1,30 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <span @click="linkTo('/')">Home</span> |
+      <span @click="linkTo('/about')">About</span>
     </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+import { defineComponent } from '@vue/composition-api'
+import { useRouter } from 'vue-composition-wrapper'
+
+export default defineComponent({
+  setup() {
+    const router = useRouter()
+    const linkTo = (path) => {
+      router.push(path)
+    }
+
+    return {
+      linkTo
+    }
+  }
+})
+</script>
 
 <style lang="scss">
 #app {
@@ -20,9 +38,10 @@
 #nav {
   padding: 30px;
 
-  a {
+  span {
     font-weight: bold;
     color: #2c3e50;
+    cursor: pointer;
 
     &.router-link-exact-active {
       color: #42b983;

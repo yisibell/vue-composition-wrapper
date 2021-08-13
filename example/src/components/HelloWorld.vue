@@ -1,12 +1,13 @@
 <template>
   <div class="hello">
-    <h1>{{ title }}</h1>
+    <h1>{{ msg }}</h1>
+    <p>{{ title }}</p>
   </div>
 </template>
 
 <script>
 import { defineComponent, computed, toRefs, onMounted } from '@vue/composition-api'
-import { useContext } from 'vue-composition-wrapper'
+import { useContext, useRoute } from 'vue-composition-wrapper'
 
 export default defineComponent({
   name: 'HelloWorld',
@@ -15,12 +16,14 @@ export default defineComponent({
   },
   setup(props) {
     const { msg } = toRefs(props)
-    const title = computed(() => msg.value + '--> composition api')
+    const title = computed(() => msg.value + '--> Hello composition api')
 
     const { app } = useContext()
+    const route = useRoute()
 
     onMounted(() => {
       console.log(app);
+      console.log(route.value);
     })
 
     return {

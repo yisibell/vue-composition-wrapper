@@ -7642,10 +7642,10 @@ vm-browserify@^1.0.1:
   resolved "https://registry.npm.taobao.org/vm-browserify/download/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha1-eGQcSIuObKkadfUR56OzKobl3aA=
 
-vue-composition-wrapper@^1.2.4:
-  version "1.2.4"
-  resolved "https://registry.nlark.com/vue-composition-wrapper/download/vue-composition-wrapper-1.2.4.tgz#c9763af5415d092b8e382f9a4575baac4fddc92f"
-  integrity sha1-yXY69UFdCSuOOC+aRXW6rE/dyS8=
+vue-composition-wrapper@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.nlark.com/vue-composition-wrapper/download/vue-composition-wrapper-1.2.5.tgz#b7ddea3abf79bd3545398a7a3f79740c4cac8ee8"
+  integrity sha1-t93qOr95vTVFOYp6P3l0DEysjug=
   dependencies:
     "@vue/composition-api" "^1.1.0"
 
