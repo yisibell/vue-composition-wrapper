@@ -1,4 +1,12 @@
-import Vue from 'vue';
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+var Vue = require('vue');
+
+function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
+
+var Vue__default = /*#__PURE__*/_interopDefaultLegacy(Vue);
 
 var toString = function (x) { return Object.prototype.toString.call(x); };
 function isNative(Ctor) {
@@ -47,7 +55,7 @@ function isFunction(x) {
     return typeof x === 'function';
 }
 function warn$1(msg, vm) {
-    Vue.util.warn(msg, vm);
+    Vue__default['default'].util.warn(msg, vm);
 }
 
 /*! *****************************************************************************
@@ -1270,4 +1278,12 @@ var useStore = function (key) {
     return vm.$store;
 };
 
-export { computed, defineAsyncComponent, defineComponent, ref, useContext, useRoute, useRouter, useStore, wrapProperty };
+exports.computed = computed;
+exports.defineAsyncComponent = defineAsyncComponent;
+exports.defineComponent = defineComponent;
+exports.ref = ref;
+exports.useContext = useContext;
+exports.useRoute = useRoute;
+exports.useRouter = useRouter;
+exports.useStore = useStore;
+exports.wrapProperty = wrapProperty;

@@ -2,7 +2,7 @@
   "name": "vue-composition-wrapper",
   "version": "1.0.8",
   "description": "composition api wrapper for vue 2.x vue-router 3.x vuex 3.x",
-  "main": "dist/vue-composition-wrapper.umd.js",
+  "main": "dist/vue-composition-wrapper.cjs.js",
   "module": "dist/vue-composition-wrapper.esm.js",
   "scripts": {
     "dev": "rollup -c -w",

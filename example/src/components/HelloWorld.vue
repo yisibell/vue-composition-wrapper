@@ -112,6 +112,7 @@
 
 <script>
 import * as foo from 'vue-composition-wrapper'
+
 export default {
   name: 'HelloWorld',
   props: {
