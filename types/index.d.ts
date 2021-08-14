@@ -1,4 +1,3 @@
-
 import { Route } from 'vue-router'
 import { VueConstructor } from 'vue'
 

@@ -97,24 +97,6 @@ export default defineComponent({
 })
 ```
 
-## useRoute
-
-访问当前路由信息对象。
-
-```js
-import { defineComponent, onMounted } from '@vue/composition-api'
-import { useRoute } from 'vue-composition-wrapper'
-export default defineComponent({
-  setup() {
-    const route = useRoute()
-
-    onMounted(() => {
-      console.log(route.value)
-    })
-  },
-})
-```
-
 ## useRouter
 
 访问当前路由对象。
@@ -137,6 +119,83 @@ export default defineComponent({
 })
 ```
 
+## useRoute
+
+访问当前路由信息对象。
+
+```js
+import { defineComponent, onMounted } from '@vue/composition-api'
+import { useRoute } from 'vue-composition-wrapper'
+export default defineComponent({
+  setup() {
+    const route = useRoute()
+
+    onMounted(() => {
+      console.log(route.value)
+    })
+  },
+})
+```
+
+## useRouteQuery
+
+访问当前路由信息中的 `query`。
+
+```js
+import { defineComponent, onMounted } from '@vue/composition-api'
+import { useRouteQuery } from 'vue-composition-wrapper'
+export default defineComponent({
+  setup() {
+    const query = useRouteQuery()
+
+    onMounted(() => {
+      console.log(query.value)
+    })
+  },
+})
+```
+
+## useRouteParams
+
+访问当前路由信息中的 `params`。
+
+```js
+import { defineComponent, onMounted } from '@vue/composition-api'
+import { useRouteParams } from 'vue-composition-wrapper'
+export default defineComponent({
+  setup() {
+    const params = useRouteParams()
+
+    onMounted(() => {
+      console.log(params.value)
+    })
+  },
+})
+```
+
 ::: tip
 其中 `route`, `query` 和 `params` 为 `Ref` 类型。
 :::
+
+## wrapProperty
+
+你可以为任何 `Vue实例属性` 创建自定义的 `helper`。
+
+你可能希望创建一个自定义帮助器，将非合成 API 属性“转换”为合成就绪属性。`wrapProperty` 使你能够轻松地执行此操作，可以根据需要返回 **计算属性** 或 **普通属性**。
+
+> (第二个参数是一个布尔值，指示 `helper` 函数是否应返回**计算属性**，默认为 `true`。)
+
+```js
+import { wrapProperty } from 'vue-composition-wrapper'
+import { defineComponent } from '@vue/composition-api'
+
+// For example, for used with https://github.com/danielroe/typed-vuex
+const useAccessor = wrapProperty('$accessor', false)
+
+export default defineComponent({
+  setup() {
+    const accessor = useAccessor()
+    // You can now access a fully typed store accessor in your component
+  },
+})
+```

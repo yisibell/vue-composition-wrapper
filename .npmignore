@@ -17,3 +17,7 @@ webpack.config.js
 # registry
 .npmrc
 .yarnrc
+
+# TypeScript declaration files
+typings/
+types/

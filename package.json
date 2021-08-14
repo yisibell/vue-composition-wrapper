@@ -6,7 +6,8 @@
   "module": "dist/vue-composition-wrapper.esm.js",
   "scripts": {
     "dev": "rollup -c -w",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "release": "npm publish --access=public"
   },
   "keywords": [
     "vue",
@@ -36,7 +37,9 @@
     "@rollup/plugin-commonjs": "^19.0.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
     "@rollup/plugin-typescript": "^8.2.1",
+    "cz-conventional-changelog": "^3.3.0",
     "rollup": "^2.48.0",
+    "rollup-plugin-dts": "^3.0.2",
     "rollup-plugin-terser": "^7.0.2",
     "tslib": "^2.2.0",
     "typescript": "^4.2.4",
@@ -48,6 +51,6 @@
     "vue": "~2.6.14"
   },
   "engines": {
-    "node": ">=12.0"
+    "node": ">=12.22.1"
   }
 }
