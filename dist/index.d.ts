@@ -1,7 +1,8 @@
-import VueRouter, { Route } from 'vue-router'
-import { VueConstructor } from 'vue'
-import { Store } from 'vuex'
-import { ComputedRef } from '@vue/composition-api'
+import VueRouter, { Route } from 'vue-router';
+export { Route } from 'vue-router';
+import { VueConstructor } from 'vue';
+import { Store } from 'vuex';
+import { ComputedRef } from '@vue/composition-api';
 
 type ComponentInstance = InstanceType<VueConstructor>
 
@@ -21,14 +22,4 @@ declare function useRouteQuery(): ComputedRef<{}>
 declare function useRouteParams(): ComputedRef<{}>
 declare function wrapProperty(property: string, makeComputed?: boolean): ComputedRef<unknown> | unknown
 
-export {
-  Route,
-  useContext,
-  useStore,
-  useRoute,
-  useRouter,
-  useRouteQuery,
-  useRouteParams,
-  wrapProperty
-}
-  
+export { useContext, useRoute, useRouteParams, useRouteQuery, useRouter, useStore, wrapProperty };
