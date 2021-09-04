@@ -23,6 +23,8 @@ $ npm i vue-composition-wrapper
 
 想要在 `vue 2.x` 中使用 **composition api**，需要借助 `@vue/composition-api`。
 
+`@vue/composition-api` 会自动安装，如果你的项目中已经有了 `@vue/composition-api` 请先卸载它。因为你的 `@vue/composition-api` 版本过低，可能会造成问题。
+
 ```js
 // @/plugins/vue-compostion-api.js
 import Vue from 'vue'
