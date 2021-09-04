@@ -6,13 +6,18 @@
 </template>
 
 <script>
-import { defineComponent, computed, toRefs, onMounted } from '@vue/composition-api'
+import {
+  defineComponent,
+  computed,
+  toRefs,
+  onMounted,
+} from '@vue/composition-api'
 import { useContext, useRoute } from 'vue-composition-wrapper'
 
 export default defineComponent({
   name: 'HelloWorld',
   props: {
-    msg: String
+    msg: String,
   },
   setup(props) {
     const { msg } = toRefs(props)
@@ -22,14 +27,14 @@ export default defineComponent({
     const route = useRoute()
 
     onMounted(() => {
-      console.log(app);
-      console.log(route.value);
+      console.log(app)
+      console.log(route.value)
     })
 
     return {
-      title
+      title,
     }
-  }
+  },
 })
 </script>
 
