@@ -1,7 +1,7 @@
 module.exports = {
-  configureWebpack: {
-    resolve: {
-      symlinks: false,
-    },
-  },
+  // configureWebpack: {
+  //   resolve: {
+  //     symlinks: false,
+  //   },
+  // },
 }
