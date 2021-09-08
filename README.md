@@ -8,6 +8,7 @@ composition api wrapper for vue 2.x vue-router 3.x vuex 3.x
 - 在 `setup` 中访问 `store`。
 - 在 `setup` 中访问 `route` 和 `router`。
 - 在 `setup` 中访问当前组件实例上下文。
+- `Storage`。
 - 使用 `typescript` 编写。
 
 # Installation
