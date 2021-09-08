@@ -8,7 +8,7 @@ composition api wrapper for vue 2.x vue-router 3.x vuex 3.x
 - 在 `setup` 中访问 `store`。
 - 在 `setup` 中访问 `route` 和 `router`。
 - 在 `setup` 中访问当前组件实例上下文。
-- `Storage`。
+- `Storage` 本地存储操作 **api**。
 - 使用 `typescript` 编写。
 
 # Installation
@@ -44,6 +44,7 @@ import '@/plugins/vue-composition-api.js'
 // ...
 ```
 
+# Core API
 ## useContext
 
 获取当前组件实例上下文。
@@ -180,6 +181,11 @@ export default defineComponent({
 其中 `route`, `query` 和 `params` 为 `Ref` 类型。
 :::
 
+
+# Heplers
+
+`vue-composition-wrapper` 同时会提供一些好用的 **工具类组合式函数** 供同学们使用。
+
 ## wrapProperty
 
 你可以为任何 `Vue实例属性` 创建自定义的 `helper`。
@@ -199,6 +205,138 @@ export default defineComponent({
   setup() {
     const accessor = useAccessor()
     // You can now access a fully typed store accessor in your component
+  },
+})
+```
+
+## useStorage
+
+浏览器本地缓存 api，可以让你方便使用 `localStorage` 和 `sessionStorage` 进行数据的 **增删改查**。
+
+**示例：**
+
+```js
+import { useStorage } from 'vue-composition-wrapper'
+import { defineComponent, onMounted } from '@vue/composition-api'
+
+export default defineComponent({
+  setup() {
+    const { setStorage, getStorage, removeStorage, clearStorage } = useStorage()
+
+    // 使用 localStorage 进行持久化
+    // const { setStorage, getStorage, removeStorage, clearStorage } = useStorage(true)
+    
+    // set storage
+    setStorage('your-key-num', 666)
+    setStorage('your-key-obj', { foo: 1 })
+
+    onMounted(() => {
+      // get storage
+      console.log(getStorage('your-key-num')) // 666
+      console.log(getStorage('your-key-obj')) // { foo: 1 }
+    })
+
+    // remove storage by some key
+    const remove = () => {
+      removeStorage('your-key-num')
+    }
+
+    // clear all storage
+    const clear = () => {
+      clearStorage()
+    }
+
+    return {
+      remove,
+      clear
+    }
+
+  },
+})
+```
+
+## useSessionStorage
+
+直接使用会话级本地存储（sessionStorage）。
+
+**示例：**
+
+```js
+import { useSessionStorage } from 'vue-composition-wrapper'
+import { defineComponent, onMounted } from '@vue/composition-api'
+
+export default defineComponent({
+  setup() {
+    const { setStorage, getStorage, removeStorage, clearStorage } = useSessionStorage()
+
+    // set storage
+    setStorage('your-key-num', 666)
+    setStorage('your-key-obj', { foo: 1 })
+
+    onMounted(() => {
+      // get storage
+      console.log(getStorage('your-key-num')) // 666
+      console.log(getStorage('your-key-obj')) // { foo: 1 }
+    })
+
+    // remove storage by some key
+    const remove = () => {
+      removeStorage('your-key-num')
+    }
+
+    // clear all storage
+    const clear = () => {
+      clearStorage()
+    }
+
+    return {
+      remove,
+      clear
+    }
+
+  },
+})
+```
+
+## useLocalStorage
+
+直接使用持久化本地存储（localStorage）。
+
+**示例：**
+
+```js
+import { useLocalStorage } from 'vue-composition-wrapper'
+import { defineComponent, onMounted } from '@vue/composition-api'
+
+export default defineComponent({
+  setup() {
+    const { setStorage, getStorage, removeStorage, clearStorage } = useLocalStorage()
+
+    // set storage
+    setStorage('your-key-num', 666)
+    setStorage('your-key-obj', { foo: 1 })
+
+    onMounted(() => {
+      // get storage
+      console.log(getStorage('your-key-num')) // 666
+      console.log(getStorage('your-key-obj')) // { foo: 1 }
+    })
+
+    // remove storage by some key
+    const remove = () => {
+      removeStorage('your-key-num')
+    }
+
+    // clear all storage
+    const clear = () => {
+      clearStorage()
+    }
+
+    return {
+      remove,
+      clear
+    }
+
   },
 })
 ```
