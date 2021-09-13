@@ -57,7 +57,7 @@ export default defineComponent({
     const { app, store, route, router, query, params } = useContext()
 
     onMounted(() => {
-      // 你可以通过从 app 访问 Vue 实例上的实例和方法
+      // 你可以通过从 app 访问 Vue 实例上的属性和方法
       console.log(app)
     })
   },
