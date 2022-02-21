@@ -14,6 +14,8 @@
     "vue",
     "composition",
     "wrapper",
+    "helper",
+    "util",
     "vuex",
     "vue-router",
     "useStore",

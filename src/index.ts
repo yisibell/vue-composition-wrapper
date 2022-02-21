@@ -7,6 +7,7 @@ import {
 } from './composables/wrappers'
 import useRouteQuery from './composables/routeQuery'
 import useRouteParams from './composables/routeParams'
+import { useStorage, useSessionStorage, useLocalStorage } from './composables/useStorage'
 
 export {
   useContext,
@@ -16,4 +17,7 @@ export {
   useRouteParams,
   useRouter,
   useStore,
+  useStorage,
+  useSessionStorage,
+  useLocalStorage
 }
