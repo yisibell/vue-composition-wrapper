@@ -1,5 +1,5 @@
 import { getCurrentInstance } from './utils'
-import { computed, ComputedRef, InjectionKey } from '@vue/composition-api'
+import { computed, ComputedRef } from '@vue/composition-api'
 import type { Store } from 'vuex'
 
 /**
@@ -49,7 +49,7 @@ export const useRoute = wrapProperty('$route')
   })
   ```
  */
-export const useStore = <S>(key?: InjectionKey<S>): Store<S> => {
+export const useStore = <S>(): Store<S> => {
   const vm = getCurrentInstance()
   if (!vm) throw new Error('This must be called within a setup function.')
 
