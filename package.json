@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/yisibell/vue-composition-wrapper",
   "dependencies": {
-    "@vue/composition-api": "^1.4.6"
+    "@vue/composition-api": "^1.4.9"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^19.0.0",
