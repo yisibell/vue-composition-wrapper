@@ -1,6 +1,6 @@
 {
   "name": "vue-composition-wrapper",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "composition api wrapper for vue 2.x vue-router 3.x vuex 3.x",
   "main": "dist/vue-composition-wrapper.cjs.js",
   "module": "dist/vue-composition-wrapper.esm.js",
