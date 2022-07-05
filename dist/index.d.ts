@@ -1,28 +1,34 @@
 import VueRouter, { Route } from 'vue-router';
 export { Route } from 'vue-router';
-import { VueConstructor } from 'vue';
 import { Store } from 'vuex';
 import { ComputedRef } from '@vue/composition-api';
+import { VueConstructor } from 'vue';
 
 type ComponentInstance = InstanceType<VueConstructor>
 
-declare function useContext(): {
+interface UseContextReturn {
   app: ComponentInstance
   store: Store<unknown>
   route: ComputedRef<Route>
   router: VueRouter
-  query: ComputedRef<{}>
-  params: ComputedRef<{}>
+  query: ComputedRef<Route['query']>
+  params: ComputedRef<Route['params']>
 }
+
+declare function useContext(): UseContextReturn
 
 declare function useStore(): Store<unknown>
 declare function useRoute(): ComputedRef<Route>
 declare function useRouter(): VueRouter
-declare function useRouteQuery(): ComputedRef<{}>
-declare function useRouteParams(): ComputedRef<{}>
-declare function wrapProperty(property: string, makeComputed?: boolean): ComputedRef<unknown> | unknown
+declare function useRouteQuery(): ComputedRef<Route['query']>
+declare function useRouteParams(): ComputedRef<Route['params']>
 
-interface StorageInstance  {
+declare function wrapProperty(
+  property: string,
+  makeComputed?: boolean
+): ComputedRef<unknown> | unknown
+
+interface StorageInstance {
   getStorage(key: string): any
   setStorage(key: string, value: any): void
   removeStorage(key: string): void
