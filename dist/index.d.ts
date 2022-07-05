@@ -1,5 +1,4 @@
 import VueRouter, { Route } from 'vue-router';
-export { Route } from 'vue-router';
 import { Store } from 'vuex';
 import { ComputedRef } from '@vue/composition-api';
 import { VueConstructor } from 'vue';

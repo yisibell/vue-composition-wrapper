@@ -1,6 +1,6 @@
 import VueRouter, { Route } from 'vue-router'
 import { Store } from 'vuex'
-import { ComputedRef } from '@vue/composition-api'
+import type { ComputedRef } from '@vue/composition-api'
 import type { UseContextReturn } from '../src/composables/context'
 
 declare function useContext(): UseContextReturn
@@ -28,7 +28,6 @@ declare function useSessionStorage(): StorageInstance
 declare function useLocalStorage(): StorageInstance
 
 export {
-  Route,
   useContext,
   useStore,
   useRoute,

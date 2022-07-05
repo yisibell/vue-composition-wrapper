@@ -4,7 +4,7 @@ import type { Route } from 'vue-router'
 import VueRouter from 'vue-router'
 import { Store } from 'vuex'
 import { VueConstructor } from 'vue'
-import { ComputedRef } from '@vue/composition-api'
+import type { ComputedRef } from '@vue/composition-api'
 
 type ComponentInstance = InstanceType<VueConstructor>
 
