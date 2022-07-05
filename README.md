@@ -52,7 +52,7 @@ import '@/plugins/vue-composition-api.js'
 // ...
 ```
 
-4. 如果你的项目还没有打算升级 `vue` 到 **2.7.x**，并且使用了 `vue-composition-wrapper` 的 **1.x 版本**。记得将 `vue` 和 `vue-template-compiler` 的版本更新为锁定到 **补丁版本**。
+4. 如果你的项目还没有打算升级 `vue` 到 **2.7.x**，并且使用了 `vue-composition-wrapper` 的 **1.x 版本**。记得将 `vue` 和 `vue-template-compiler` 的版本更新锁定到 **2.6** 的 **补丁版本**。
 
 ```json
 {
