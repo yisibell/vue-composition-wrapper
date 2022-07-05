@@ -262,10 +262,10 @@
     "@typescript-eslint/types" "5.12.0"
     eslint-visitor-keys "^3.0.0"
 
-"@vue/composition-api@^1.4.9":
-  version "1.4.9"
-  resolved "https://registry.yarnpkg.com/@vue/composition-api/-/composition-api-1.4.9.tgz#6fa65284f545887b52d421f23b4fa1c41bc0ad4b"
-  integrity sha512-l6YOeg5LEXmfPqyxAnBaCv1FMRw0OGKJ4m6nOWRm6ngt5TuHcj5ZoBRN+LXh3J0u6Ur3C4VA+RiKT+M0eItr/g==
+"@vue/composition-api@^1.7.0":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@vue/composition-api/-/composition-api-1.7.0.tgz#26fae79e5023fc6c9dfd99ca5d3d357e1c5b9c60"
+  integrity sha512-hxOgLYR+wjuPX9bkP2pAPlqUs98XxBoa9DSLyp1z6+YR92wC42PZcZKs4d+VRtcv4udOv041Kss+F6ap5nj8YA==
 
 acorn-jsx@^5.3.1:
   version "5.3.2"
@@ -1690,10 +1690,10 @@ vue-router@^3.5.2:
   resolved "https://registry.nlark.com/vue-router/download/vue-router-3.5.2.tgz?cache=0&sync_timestamp=1628495505697&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fvue-router%2Fdownload%2Fvue-router-3.5.2.tgz#5f55e3f251970e36c3e8d88a7cd2d67a350ade5c"
   integrity sha1-X1Xj8lGXDjbD6NiKfNLWejUK3lw=
 
-vue@^2.6.14:
+vue@~2.6.14:
   version "2.6.14"
-  resolved "https://registry.nlark.com/vue/download/vue-2.6.14.tgz#e51aa5250250d569a3fbad3a8a5a687d6036e235"
-  integrity sha1-5RqlJQJQ1Wmj+606ilpofWA24jU=
+  resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.14.tgz#e51aa5250250d569a3fbad3a8a5a687d6036e235"
+  integrity sha512-x2284lgYvjOMj3Za7kqzRcUSxBboHqtgRE2zlos1qWaOye5yUmHn42LB1250NJBLRwEcdrB0JRwyPTEPhfQjiQ==
 
 vuex@^3.6.2:
   version "3.6.2"

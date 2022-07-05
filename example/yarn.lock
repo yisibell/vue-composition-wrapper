@@ -1380,11 +1380,6 @@
   optionalDependencies:
     prettier "^1.18.2"
 
-"@vue/composition-api@^1.4.6":
-  version "1.4.6"
-  resolved "https://registry.yarnpkg.com/@vue/composition-api/-/composition-api-1.4.6.tgz#886c35221cd7c6f55272543a121240e8d3a1306c"
-  integrity sha512-UP359OJ0G0Zli603/i9fhXFmNtZUSrypSFyqClMxizp8ezlaMK2GCmHgy3qyrRnO/xjcDAx09vvXPwNFtxHPtQ==
-
 "@vue/preload-webpack-plugin@^1.1.0":
   version "1.1.2"
   resolved "https://registry.npm.taobao.org/@vue/preload-webpack-plugin/download/@vue/preload-webpack-plugin-1.1.2.tgz#ceb924b4ecb3b9c43871c7a429a02f8423e621ab"
@@ -7635,13 +7630,6 @@ vm-browserify@^1.0.1:
   resolved "https://registry.npm.taobao.org/vm-browserify/download/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha1-eGQcSIuObKkadfUR56OzKobl3aA=
 
-vue-composition-wrapper@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/vue-composition-wrapper/-/vue-composition-wrapper-1.4.0.tgz#272781892e62f14a3f5595150007be8aeeddb1d4"
-  integrity sha512-EkCV4RryCmVpQtQ72fi4Dqx1IdggAC244Tvj6c7thsdLv8AUyg5BOAts68wtdMVUS/fWaqYWdKIkUPc77l+yng==
-  dependencies:
-    "@vue/composition-api" "^1.4.6"
-
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"
   resolved "https://registry.npm.taobao.org/vue-hot-reload-api/download/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
@@ -7680,10 +7668,10 @@ vue-style-loader@^4.1.0, vue-style-loader@^4.1.2:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
 
-vue-template-compiler@^2.6.11:
+vue-template-compiler@~2.6.14:
   version "2.6.14"
-  resolved "https://registry.nlark.com/vue-template-compiler/download/vue-template-compiler-2.6.14.tgz#a2f0e7d985670d42c9c9ee0d044fed7690f4f763"
-  integrity sha1-ovDn2YVnDULJye4NBE/tdpD092M=
+  resolved "https://registry.yarnpkg.com/vue-template-compiler/-/vue-template-compiler-2.6.14.tgz#a2f0e7d985670d42c9c9ee0d044fed7690f4f763"
+  integrity sha512-ODQS1SyMbjKoO1JBJZojSw6FE4qnh9rIpUZn2EUT86FKizx9uH5z6uXiIrm4/Nb/gwxTi/o17ZDEGWAXHvtC7g==
   dependencies:
     de-indent "^1.0.2"
     he "^1.1.0"
@@ -7693,10 +7681,10 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.npm.taobao.org/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha1-HuO8mhbsv1EYvjNLsV+cRvgvWCU=
 
-vue@^2.6.11:
+vue@~2.6.14:
   version "2.6.14"
-  resolved "https://registry.nlark.com/vue/download/vue-2.6.14.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fvue%2Fdownload%2Fvue-2.6.14.tgz#e51aa5250250d569a3fbad3a8a5a687d6036e235"
-  integrity sha1-5RqlJQJQ1Wmj+606ilpofWA24jU=
+  resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.14.tgz#e51aa5250250d569a3fbad3a8a5a687d6036e235"
+  integrity sha512-x2284lgYvjOMj3Za7kqzRcUSxBboHqtgRE2zlos1qWaOye5yUmHn42LB1250NJBLRwEcdrB0JRwyPTEPhfQjiQ==
 
 vuex@^3.4.0:
   version "3.6.2"
