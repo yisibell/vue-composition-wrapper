@@ -1,4 +1,8 @@
 
+# 1.5.2 (2022-07-05)
+## Bug Fixs
+
+1. delete unused types.
 # 1.5.1 (2022-07-05)
 
 ## Bug Fixs
