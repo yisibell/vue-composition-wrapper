@@ -9,7 +9,7 @@ A composition api wrapper for vue(2.x) vue-router(3.x) vuex(3.x).
 - 在 `setup` 中访问 `route` 和 `router`。
 - 在 `setup` 中访问当前组件实例上下文。
 - `Storage` 本地存储操作 **api**。
-- 使用 `typescript` 编写。
+- 支持 `typescript`。
 
 # Installation
 

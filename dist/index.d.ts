@@ -14,6 +14,13 @@ interface UseContextReturn {
   params: ComputedRef<Route['params']>
 }
 
+interface StorageInstance {
+  getStorage(key: string): any
+  setStorage(key: string, value: any): void
+  removeStorage(key: string): void
+  clearStorage(): void
+}
+
 declare function useContext(): UseContextReturn
 
 declare function useStore(): Store<unknown>
@@ -26,13 +33,6 @@ declare function wrapProperty(
   property: string,
   makeComputed?: boolean
 ): ComputedRef<unknown> | unknown
-
-interface StorageInstance {
-  getStorage(key: string): any
-  setStorage(key: string, value: any): void
-  removeStorage(key: string): void
-  clearStorage(): void
-}
 
 declare function useStorage(persistent?: boolean): StorageInstance
 declare function useSessionStorage(): StorageInstance

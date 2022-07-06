@@ -1,4 +1,13 @@
-export const useStorage = (persistent?: boolean) => {
+export interface StorageInstance {
+  getStorage(key: string): any
+  setStorage(key: string, value: any): void
+  removeStorage(key: string): void
+  clearStorage(): void
+}
+
+export const useStorage: (persistent?: boolean) => StorageInstance = (
+  persistent
+) => {
   const storage = () =>
     persistent ? window.localStorage : window.sessionStorage
 
