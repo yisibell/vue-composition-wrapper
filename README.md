@@ -8,7 +8,7 @@ A composition api wrapper for vue(2.x) vue-router(3.x) vuex(3.x).
 - 在 `setup` 中访问 `store`。
 - 在 `setup` 中访问 `route` 和 `router`。
 - 在 `setup` 中访问当前组件实例上下文。
-- ~~`Storage` 本地存储操作 **api**~~。将在 `v2` 中删除，请使用 <a href="https://github.com/yisibell/vue-use-toolkit">vue-use-toolkit</a> 替代。
+- ~~`Storage` 本地存储操作 **api**~~。在 `v2` 中已被移除，请使用 <a href="https://github.com/yisibell/vue-use-toolkit">vue-use-toolkit</a> 替代。
 - 支持 `typescript`。
 
 # Installation
@@ -16,13 +16,15 @@ A composition api wrapper for vue(2.x) vue-router(3.x) vuex(3.x).
 ```bash
 # yarn
 $ yarn add vue-composition-wrapper
-# or npm
+
+# npm
 $ npm i vue-composition-wrapper
 ```
 
 # Docs
 
 - <a href="./docs/v1.md">Core API for v1</a>。
+- <a href="./docs/v2.md">Core API for v2</a>。
 
 # Usage
 
@@ -67,9 +69,15 @@ import '@/plugins/vue-composition-api.js'
 
 ## For Vue(^2.7)
 
-1. 在 `vue-compostion-wrapper@2.x` 中，将移除对 `@vue/compostion-api` 的依赖。直接使用 `vue@2.7` 的内置组合式API。
+1. 在 `vue-compostion-wrapper@2.x` 中，已移除对 `@vue/compostion-api` 的依赖。直接使用 `vue@2.7` 的内置组合式API。
 
-> 注：正在适配开发中...
+``` bash
+# yarn
+$ yarn add vue-composition-wrapper@next
+
+# npm 
+$ npm i vue-composition-wrapper@next
+```
 
 # Change Log
 

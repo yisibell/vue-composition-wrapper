@@ -1,39 +1,30 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <p>{{ title }}</p>
   </div>
 </template>
 
 <script>
-import {
-  defineComponent,
-  computed,
-  toRefs,
-  onMounted,
-} from '@vue/composition-api'
-import { useContext, useRoute } from 'vue-composition-wrapper'
+import { defineComponent, onMounted } from '@vue/composition-api'
+import { useContext, useRoute, useStore } from 'vue-composition-wrapper'
 
 export default defineComponent({
   name: 'HelloWorld',
   props: {
     msg: String,
   },
-  setup(props) {
-    const { msg } = toRefs(props)
-    const title = computed(() => msg.value + '--> Hello composition api')
-
-    const { app } = useContext()
+  setup() {
+    const ctx = useContext()
     const route = useRoute()
+    const store = useStore()
 
     onMounted(() => {
-      console.log(app)
-      console.log(route.value)
+      console.log('context:', ctx)
+      console.log('route: ', route.value)
+      console.log('store:', store)
     })
 
-    return {
-      title,
-    }
+    return {}
   },
 })
 </script>

@@ -5,8 +5,8 @@
 </template>
 
 <script>
-import { onMounted } from 'vue'
-import { useContext } from 'vue-composition-wrapper'
+import { computed, onMounted } from 'vue'
+import { useContext, useRoute, useStore } from 'vue-composition-wrapper'
 
 export default {
   name: 'HelloWorld',
@@ -15,9 +15,16 @@ export default {
   },
   setup() {
     const ctx = useContext()
+    const route = useRoute()
+    const store = useStore()
+
+    const appName = computed(() => store.state.appName)
 
     onMounted(() => {
       console.log('context:', ctx)
+      console.log('route:', route.value)
+      console.log('store:', store)
+      console.log('store state:', appName.value)
     })
   },
 }

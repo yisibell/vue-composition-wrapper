@@ -1,3 +1,15 @@
+
+# 2.0.0-alpha.0 (2022-07-06)
+
+## Features
+
+1. 支持 `vue 2.7`。
+
+## Breaking Changes
+
+1. 移除 `useStorage` api。
+2. 移除 `@vue/composition-api` 依赖。
+
 # 1.5.3 (2022-07-06)
 ## Upgrade
 

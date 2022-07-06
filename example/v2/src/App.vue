@@ -1,12 +1,30 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <span @click="linkTo('/')">Home</span> |
+      <span @click="linkTo('/about')">About</span>
     </div>
     <router-view />
   </div>
 </template>
+
+<script>
+import { defineComponent } from 'vue'
+import { useRouter } from 'vue-composition-wrapper'
+export default defineComponent({
+  setup() {
+    const router = useRouter()
+
+    const linkTo = (href) => {
+      router.push(href)
+    }
+
+    return {
+      linkTo,
+    }
+  },
+})
+</script>
 
 <style>
 #app {
