@@ -1,5 +1,5 @@
 import { VueConstructor } from 'vue'
-import { getCurrentInstance as getVM } from '@vue/composition-api'
+import { getCurrentInstance as getVM } from 'vue'
 
 export function getCurrentInstance() {
   const vm = getVM()

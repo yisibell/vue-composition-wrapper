@@ -8,7 +8,7 @@ import pkg from './package.json'
 export default [
   {
     input: 'src/index.ts',
-    external: ['vue', '@vue/composition-api'],
+    external: ['vue'],
     plugins: [
       nodeResolve(),
       commonjs(),

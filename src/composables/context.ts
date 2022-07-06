@@ -1,10 +1,10 @@
-import { computed } from '@vue/composition-api'
+import { computed } from 'vue'
 import { getCurrentInstance } from './utils'
 import type { Route } from 'vue-router'
 import VueRouter from 'vue-router'
 import { Store } from 'vuex'
 import { VueConstructor } from 'vue'
-import type { ComputedRef } from '@vue/composition-api'
+import type { ComputedRef } from 'vue'
 
 type ComponentInstance = InstanceType<VueConstructor>
 

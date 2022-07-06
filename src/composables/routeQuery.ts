@@ -1,5 +1,5 @@
 import { useRoute } from './wrappers'
-import { computed } from '@vue/composition-api'
+import { computed } from 'vue'
 
 /**
  * Gain access to route's query.

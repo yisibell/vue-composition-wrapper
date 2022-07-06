@@ -22,7 +22,7 @@ $ npm i vue-composition-wrapper
 
 # Docs
 
-- <a href="./docs/README.md">Core API for v1</a>。
+- <a href="./docs/v1.md">Core API for v1</a>。
 
 # Usage
 
