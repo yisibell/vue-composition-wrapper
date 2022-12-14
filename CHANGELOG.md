@@ -1,4 +1,10 @@
 
+# 2.0.0
+
+## Upgrade
+
+1. 将 `2.x` 标记为 **npm latest tag**。
+
 # 2.0.0-alpha.0 (2022-07-06)
 
 ## Features

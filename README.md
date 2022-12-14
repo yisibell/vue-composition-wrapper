@@ -28,6 +28,19 @@ $ npm i vue-composition-wrapper
 
 # Usage
 
+## For Vue(^2.7)
+
+1. 在 `vue-compostion-wrapper@2.x` 中，已移除对 `@vue/compostion-api` 的依赖。直接使用 `vue@2.7` 的内置组合式API。
+2. 请安装 `vue-compostion-wrapper@2.x`。现已将 **npm tag** 标记为 **latest**。
+
+``` bash
+# yarn
+$ yarn add vue-composition-wrapper@latest
+
+# npm 
+$ npm i vue-composition-wrapper@latest
+```
+
 ## For Vue(~2.6)
 
 1. 想要在 `vue(~2.6.x)` 中使用 **Composition API**，需要借助 <a href="https://github.com/vuejs/composition-api"> @vue/composition-api </a>。
@@ -67,18 +80,8 @@ import '@/plugins/vue-composition-api.js'
 }
 ```
 
-## For Vue(^2.7)
-
-1. 在 `vue-compostion-wrapper@2.x` 中，已移除对 `@vue/compostion-api` 的依赖。直接使用 `vue@2.7` 的内置组合式API。
-
-``` bash
-# yarn
-$ yarn add vue-composition-wrapper@next
-
-# npm 
-$ npm i vue-composition-wrapper@next
-```
-
 # Change Log
 
 see <a href="./CHANGELOG.md">CHANGELOG</a>。
+
+
