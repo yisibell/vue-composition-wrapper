@@ -1,6 +1,21 @@
 # CHANGE LOG
 # 2.0.0
 
+## v2.1.0
+
+
+### 🚀 Enhancements
+
+  - Add changelog generator, fix npmignore files (93e1f19)
+
+### 🏡 Chore
+
+  - Upgrade version 2 to npm latest tag (58cd8e7)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## Upgrade
 
 1. 将 `2.x` 标记为 **npm latest tag**。
