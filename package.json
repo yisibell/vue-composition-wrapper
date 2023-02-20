@@ -22,6 +22,9 @@
     "useRoute",
     "useContext"
   ],
+  "files": [
+    "dist"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -34,7 +37,7 @@
   "scripts": {
     "dev": "rollup -c -w",
     "build": "rollup -c",
-    "release": "npm publish --access=public",
+    "release": "npm run build && changelogen --release && npm publish --access=public && git push --follow-tags",
     "release:next": "npm publish --access=public --tag next"
   },
   "devDependencies": {
@@ -43,6 +46,7 @@
     "@rollup/plugin-typescript": "^8.2.1",
     "@typescript-eslint/eslint-plugin": "^5.12.0",
     "@typescript-eslint/parser": "^5.12.0",
+    "changelogen": "^0.4.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.9.0",
     "eslint-config-prettier": "^8.4.0",

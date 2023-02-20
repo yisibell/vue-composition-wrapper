@@ -80,8 +80,8 @@ import '@/plugins/vue-composition-api.js'
 }
 ```
 
-# Change Log
+# CHANGE LOG
 
-see <a href="./CHANGELOG.md">CHANGELOG</a>。
+see <a href="./CHANGELOG.md" target="_blank">CHANGE LOG</a>.
 
 
