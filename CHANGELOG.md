@@ -1,5 +1,5 @@
 # CHANGE LOG
-# 2.0.0
+
 
 ## v2.1.0
 
@@ -15,6 +15,8 @@
 ### ❤️  Contributors
 
 - Wenqing <wenqing@kerrylan.com>
+
+# 2.0.0
 
 ## Upgrade
 
