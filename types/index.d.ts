@@ -1,11 +1,13 @@
 import VueRouter, { Route } from 'vue-router'
-import { Store } from 'vuex'
+import type { Store } from 'vuex'
 import type { ComputedRef } from 'vue'
 import type { UseContextReturn } from '../src/composables/context'
 
 declare function useContext(): UseContextReturn
 
-declare function useStore(): Store<unknown>
+type UseStoreFunc = <S>() => Store<S>
+
+declare const useStore: UseStoreFunc
 declare function useRoute(): ComputedRef<Route>
 declare function useRouter(): VueRouter
 declare function useRouteQuery(): ComputedRef<Route['query']>
@@ -24,4 +26,5 @@ export {
   useRouteQuery,
   useRouteParams,
   wrapProperty,
+  UseStoreFunc,
 }

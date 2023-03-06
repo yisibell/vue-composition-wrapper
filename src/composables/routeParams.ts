@@ -1,5 +1,5 @@
 import { computed } from 'vue'
-import { useRoute } from './wrappers'
+import { useRoute } from './useRoute'
 
 /**
  * Gain access to route's params

@@ -1,4 +1,4 @@
-import { useRoute } from './wrappers'
+import { useRoute } from './useRoute'
 import { computed } from 'vue'
 
 /**
