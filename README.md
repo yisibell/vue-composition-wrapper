@@ -32,8 +32,11 @@ $ npm i vue-composition-wrapper
 
 # APIs
 
-- <a href="./docs/v1.md">Core API for v1</a>。
-- <a href="./docs/v2.md">Core API for v2</a>。
+| Docs | Version | Support Vue version  |
+| :---: | :---: | :---: |
+| <a href="./docs/v1.md">Core API for v1</a> | `v1.5.3` | `v2.6` and lower |
+| <a href="./docs/v2.md">Core API for v2</a> | `v2.1.4` | `v2.7` |
+
 
 # Usage
 
