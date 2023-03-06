@@ -15,8 +15,8 @@ A composition api wrapper for vue(2.x) vue-router(3.x) vuex(3.x).
 # Features
 
 - Let you use **Composition API** more conveniently in `vue 2.x` projects.
-- Access **store** via `useStore` in `setup`.
-- Access `route` and `router`via `useRoute` and `useRouter` in `setup`.
+- Access **Store** via `useStore` in `setup`.
+- Access **Route** and **Router** via `useRoute` and `useRouter` in `setup`.
 - Access the current **Vue component instance** context via `useContext` in `setup`.
 - Support `Typescript`.
 
@@ -30,7 +30,7 @@ $ yarn add vue-composition-wrapper
 $ npm i vue-composition-wrapper
 ```
 
-# Docs
+# APIs
 
 - <a href="./docs/v1.md">Core API for v1</a>。
 - <a href="./docs/v2.md">Core API for v2</a>。
