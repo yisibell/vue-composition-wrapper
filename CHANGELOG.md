@@ -1,6 +1,17 @@
 # CHANGE LOG
 
 
+## v2.1.3
+
+
+### 🩹 Fixes
+
+  - **types:** Fix useStore types (0d1ba6f)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v2.1.2
 
 

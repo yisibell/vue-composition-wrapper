@@ -15,7 +15,9 @@ interface UseContextReturn {
 
 declare function useContext(): UseContextReturn
 
-declare function useStore(): Store<unknown>
+type UseStoreFunc = <S>() => Store<S>
+
+declare const useStore: UseStoreFunc
 declare function useRoute(): ComputedRef<Route>
 declare function useRouter(): VueRouter
 declare function useRouteQuery(): ComputedRef<Route['query']>
@@ -26,4 +28,4 @@ declare function wrapProperty(
   makeComputed?: boolean
 ): ComputedRef<unknown> | unknown
 
-export { useContext, useRoute, useRouteParams, useRouteQuery, useRouter, useStore, wrapProperty };
+export { UseStoreFunc, useContext, useRoute, useRouteParams, useRouteQuery, useRouter, useStore, wrapProperty };
