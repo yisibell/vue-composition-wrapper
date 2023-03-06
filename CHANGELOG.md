@@ -1,6 +1,17 @@
 # CHANGE LOG
 
 
+## v2.1.4
+
+
+### 🏡 Chore
+
+  - **docs:** Update docs (0f350c3)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v2.1.3
 
 
