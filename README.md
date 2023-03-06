@@ -1,15 +1,24 @@
+<p align="center">
+  <a href="https://www.npmjs.org/package/vue-composition-wrapper">
+    <img src="https://img.shields.io/npm/v/vue-composition-wrapper.svg">
+  </a>
+  <a href="https://npmcharts.com/compare/vue-composition-wrapper?minimal=true">
+    <img src="https://img.shields.io/npm/dm/vue-composition-wrapper.svg">
+  </a>
+  <br>
+</p>
+
 # vue-composition-wrapper
 
 A composition api wrapper for vue(2.x) vue-router(3.x) vuex(3.x).
 
 # Features
 
-- 让你可以在 `vue 2.x` 的项目中方便使用 **Composition API**。
-- 在 `setup` 中访问 `store`。
-- 在 `setup` 中访问 `route` 和 `router`。
-- 在 `setup` 中访问当前组件实例上下文。
-- ~~`Storage` 本地存储操作 **api**~~。在 `v2` 中已被移除，请使用 <a href="https://github.com/yisibell/vue-use-toolkit">vue-use-toolkit</a> 替代。
-- 支持 `typescript`。
+- Let you use **Composition API** more conveniently in `vue 2.x` projects.
+- Access **store** via `useStore` in `setup`.
+- Access `route` and `router`via `useRoute` and `useRouter` in `setup`.
+- Access the current **Vue component instance** context via `useContext` in `setup`.
+- Support `Typescript`.
 
 # Installation
 
@@ -30,8 +39,8 @@ $ npm i vue-composition-wrapper
 
 ## For Vue(^2.7)
 
-1. 在 `vue-compostion-wrapper@2.x` 中，已移除对 `@vue/compostion-api` 的依赖。直接使用 `vue@2.7` 的内置组合式API。
-2. 请安装 `vue-compostion-wrapper@2.x`。现已将 **npm tag** 标记为 **latest**。
+1. In `vue-compostion-wrapper@2.x`, the dependency on `@vue/compostion-api` has been removed. Directly use the built-in composition API of `vue@2.7`.
+2. Please install `vue-compostion-wrapper@2.x`. The **npm tag** is now tagged as **latest**.
 
 ``` bash
 # yarn
@@ -43,11 +52,11 @@ $ npm i vue-composition-wrapper@latest
 
 ## For Vue(~2.6)
 
-1. 想要在 `vue(~2.6.x)` 中使用 **Composition API**，需要借助 <a href="https://github.com/vuejs/composition-api"> @vue/composition-api </a>。
+1. To use **Composition API** in `vue(~2.6.x)`, you need to use <a href="https://github.com/vuejs/composition-api"> @vue/composition-api </a>.
 
-2. `@vue/composition-api` 被作为 `vue-composition-wrapper@1.x` 的 **dependencies**，所以会自动安装。如果你的项目中已经有了 `@vue/composition-api` 请先卸载它。因为你的 `@vue/composition-api` 版本过低，可能会造成问题。
+2. `@vue/composition-api` is included as **dependencies** of `vue-composition-wrapper@1.x`, so it will be installed automatically. If you already have `@vue/composition-api` in your project, please uninstall it first. Because if your `@vue/composition-api` version is too low, it may cause problems.
 
-3. 将 `@vue/composition-api` 作为 **Vue插件** 进行安装。
+3. Install `@vue/composition-api` as a **Vue plugin**.
 
 ```js
 // @/plugins/vue-compostion-api.js
@@ -57,7 +66,7 @@ import VueCompositionAPI from '@vue/composition-api'
 Vue.use(VueCompositionAPI)
 ```
 
-然后，在你的 `main.js` 中导入。
+Then, import it in your `main.js`.
 
 ```js
 // ...
@@ -67,7 +76,7 @@ import '@/plugins/vue-composition-api.js'
 // ...
 ```
 
-4. 如果你的项目还没有打算升级 `vue` 到 **2.7.x**，并且使用了 `vue-composition-wrapper` 的 **1.x 版本**。记得将 `vue` 和 `vue-template-compiler` 的版本更新锁定到 **2.6** 的 **补丁版本**。
+4. If your project has not planned to upgrade `vue` to **2.7.x**, and uses the **1.x version** of `vue-composition-wrapper`. Remember to lock the version updates of `vue` and `vue-template-compiler` to the **patch version** of **2.6**.
 
 ```json
 {
