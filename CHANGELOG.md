@@ -1,6 +1,19 @@
 # CHANGE LOG
 
 
+## v3.1.0
+
+[compare changes](https://github.com/yisibell/vue-composition-wrapper/compare/v3.0.2...v3.1.0)
+
+
+### 🚀 Enhancements
+
+  - UseContext route as non-ref ([4c423d5](https://github.com/yisibell/vue-composition-wrapper/commit/4c423d5))
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v3.0.2
 
 [compare changes](https://github.com/yisibell/vue-composition-wrapper/compare/v3.0.1...v3.0.2)
