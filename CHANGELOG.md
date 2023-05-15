@@ -1,6 +1,21 @@
 # CHANGE LOG
 
 
+## v2.2.0
+
+
+### 🚀 Enhancements
+
+  - Export getCurrentInstance and fix wrapProperty types (828a2f4)
+
+### 🏡 Chore
+
+  - **docs:** Update useStore usage docs (bac3843)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v2.1.4
 
 
