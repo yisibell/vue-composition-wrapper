@@ -44,7 +44,7 @@ $ npm i vue-composition-wrapper
 
 ## For Vue(^2.7)
 
-1. In `vue-compostion-wrapper@2.x`, the dependency on `@vue/compostion-api` has been removed. Directly use the built-in composition API of `vue@2.7`.
+1. In current version of `vue-compostion-wrapper`, the dependency on `@vue/compostion-api` has been removed. Directly use the built-in composition API of `vue@2.7`.
 2. Please install `vue-compostion-wrapper@latest`. The **npm tag** is now tagged as **latest**.
 
 ``` bash
