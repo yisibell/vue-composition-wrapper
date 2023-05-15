@@ -3,10 +3,16 @@ import { wrapProperty } from './composables/wrappers'
 import { useStore } from './composables/useStore'
 import { getCurrentInstance } from './composables/utils'
 
-import { useRoute } from './composables//useRoute'
-import { useRouter } from './composables//useRouter'
 import useRouteQuery from './composables/routeQuery'
 import useRouteParams from './composables/routeParams'
+
+import {
+  useLink,
+  useRoute,
+  useRouter,
+  onBeforeRouteLeave,
+  onBeforeRouteUpdate,
+} from './composables/router'
 
 export {
   getCurrentInstance,
@@ -16,5 +22,8 @@ export {
   useRouteQuery,
   useRouteParams,
   useRouter,
+  useLink,
+  onBeforeRouteLeave,
+  onBeforeRouteUpdate,
   useStore,
 }

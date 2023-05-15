@@ -6,6 +6,9 @@ import type {
   UseRouteParams,
   UseRouteQuery,
   UseRouter,
+  OnBeforeRouteLeave,
+  OnBeforeRouteUpdate,
+  UseLink,
 } from '../src/interfaces/router'
 
 declare const useContext: UseContext
@@ -15,8 +18,14 @@ declare const getCurrentInstance: GetCurrentInstance
 
 declare const useRoute: UseRoute
 declare const useRouter: UseRouter
+
 declare const useRouteQuery: UseRouteQuery
 declare const useRouteParams: UseRouteParams
+
+declare const useLink: UseLink
+
+declare const onBeforeRouteLeave: OnBeforeRouteLeave
+declare const onBeforeRouteUpdate: OnBeforeRouteUpdate
 
 export {
   getCurrentInstance,
@@ -27,5 +36,8 @@ export {
   useRouter,
   useRouteQuery,
   useRouteParams,
+  useLink,
+  onBeforeRouteLeave,
+  onBeforeRouteUpdate,
   wrapProperty,
 }

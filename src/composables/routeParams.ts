@@ -1,5 +1,5 @@
 import { computed } from 'vue'
-import { useRoute } from './useRoute'
+import { useRoute } from './router'
 
 /**
  * Gain access to route's params
@@ -7,7 +7,7 @@ import { useRoute } from './useRoute'
 const useRouteParams = () => {
   const route = useRoute()
 
-  return computed(() => route.value.params)
+  return computed(() => route.params)
 }
 
 export default useRouteParams

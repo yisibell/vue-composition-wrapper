@@ -1,4 +1,4 @@
-import { useRoute } from './useRoute'
+import { useRoute } from './router'
 import { computed } from 'vue'
 
 /**
@@ -6,7 +6,7 @@ import { computed } from 'vue'
  */
 const useRouteQuery = () => {
   const route = useRoute()
-  return computed(() => route.value.query)
+  return computed(() => route.query)
 }
 
 export default useRouteQuery

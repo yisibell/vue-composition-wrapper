@@ -8,7 +8,7 @@ import pkg from './package.json'
 export default [
   {
     input: 'src/index.ts',
-    external: ['vue'],
+    external: Object.keys(pkg.peerDependencies),
     plugins: [
       nodeResolve(),
       commonjs(),
