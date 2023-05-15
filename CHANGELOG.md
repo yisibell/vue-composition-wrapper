@@ -1,6 +1,19 @@
 # CHANGE LOG
 
 
+## v3.0.1
+
+[compare changes](https://github.com/yisibell/vue-composition-wrapper/compare/v3.0.0...v3.0.1)
+
+
+### 🏡 Chore
+
+  - **docs:** Update readme ([208e6a9](https://github.com/yisibell/vue-composition-wrapper/commit/208e6a9))
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v3.0.0
 
 [compare changes](https://github.com/yisibell/vue-composition-wrapper/compare/v2.2.0...v3.0.0)
