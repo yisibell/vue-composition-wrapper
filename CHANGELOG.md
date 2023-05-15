@@ -1,6 +1,19 @@
 # CHANGE LOG
 
 
+## v3.1.1
+
+[compare changes](https://github.com/yisibell/vue-composition-wrapper/compare/v3.1.0...v3.1.1)
+
+
+### 🏡 Chore
+
+  - **dist:** Sync dist ([c75eb2e](https://github.com/yisibell/vue-composition-wrapper/commit/c75eb2e))
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v3.1.0
 
 [compare changes](https://github.com/yisibell/vue-composition-wrapper/compare/v3.0.2...v3.1.0)
