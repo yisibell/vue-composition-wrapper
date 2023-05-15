@@ -9,7 +9,7 @@ type ComponentInstance = InstanceType<VueConstructor>
 export interface UseContextReturn {
   app: ComponentInstance
   store: Store<unknown>
-  route: ComputedRef<Route>
+  route: Route
   router: VueRouter
   query: ComputedRef<Route['query']>
   params: ComputedRef<Route['params']>

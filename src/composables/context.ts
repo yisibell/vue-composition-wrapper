@@ -24,7 +24,7 @@ const useContext: UseContext = () => {
     app: vm,
     store: vm.$store,
     router: vm.$router,
-    route: computed(() => vm.$route),
+    route: vm.$route,
     query: computed(() => vm.$route.query),
     params: computed(() => vm.$route.params),
   }
