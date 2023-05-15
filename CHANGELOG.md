@@ -1,6 +1,25 @@
 # CHANGE LOG
 
 
+## v3.0.0
+
+[compare changes](https://github.com/yisibell/vue-composition-wrapper/compare/v2.2.0...v3.0.0)
+
+
+### 🚀 Enhancements
+
+  - ⚠️  Use vue-router/composables ([5031fbe](https://github.com/yisibell/vue-composition-wrapper/commit/5031fbe))
+  - ⚠️  Refactor rollup to v3 ([31fb44f](https://github.com/yisibell/vue-composition-wrapper/commit/31fb44f))
+
+#### ⚠️  Breaking Changes
+
+  - ⚠️  Use vue-router/composables ([5031fbe](https://github.com/yisibell/vue-composition-wrapper/commit/5031fbe))
+  - ⚠️  Refactor rollup to v3 ([31fb44f](https://github.com/yisibell/vue-composition-wrapper/commit/31fb44f))
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v2.2.0
 
 
