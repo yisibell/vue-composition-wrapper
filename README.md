@@ -10,7 +10,8 @@
 
 # vue-composition-wrapper
 
-A **Vue Composition API** wrapper for vue(2.x) vue-router(3.x) vuex(3.x). Let you use **Composition API** more conveniently in `vue 2.x` projects.
+A **Vue Composition API** wrapper for `vue(2.x)` `vue-router(3.x)` `vuex(3.x)`.
+Let you use **Composition API** more conveniently in `vue 2.x` projects.
 
 # Features
 
@@ -32,7 +33,7 @@ $ npm i vue-composition-wrapper
 
 # APIs
 
-| Docs | Version | Support **Vue** version  | Support **vue-router** version |
+| Docs | Version | Support Vue version  | Support vue-router version |
 | :---: | :---: | :---: | :---: |
 | <a href="./docs/v1.md">Core API for v1</a> | `v1.5.3` | `v2.6` and lower | - |
 | <a href="./docs/v2.md">Core API for v2</a> | `v2.1.4` | `v2.7` | - |
@@ -44,7 +45,7 @@ $ npm i vue-composition-wrapper
 ## For Vue(^2.7)
 
 1. In `vue-compostion-wrapper@2.x`, the dependency on `@vue/compostion-api` has been removed. Directly use the built-in composition API of `vue@2.7`.
-2. Please install `vue-compostion-wrapper@2.x`. The **npm tag** is now tagged as **latest**.
+2. Please install `vue-compostion-wrapper@latest`. The **npm tag** is now tagged as **latest**.
 
 ``` bash
 # yarn
