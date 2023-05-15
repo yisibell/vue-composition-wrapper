@@ -1,21 +1,6 @@
 import { computed } from 'vue'
 import { getCurrentInstance } from './utils'
-import type { Route } from 'vue-router'
-import VueRouter from 'vue-router'
-import { Store } from 'vuex'
-import { VueConstructor } from 'vue'
-import type { ComputedRef } from 'vue'
-
-type ComponentInstance = InstanceType<VueConstructor>
-
-export interface UseContextReturn {
-  app: ComponentInstance
-  store: Store<unknown>
-  route: ComputedRef<Route>
-  router: VueRouter
-  query: ComputedRef<Route['query']>
-  params: ComputedRef<Route['params']>
-}
+import type { UseContext } from '../interfaces/context'
 
 /**
  * `useContext` will return the Vue context.
@@ -30,9 +15,10 @@ export interface UseContextReturn {
   })
   ```
  */
-const useContext: () => UseContextReturn = () => {
+const useContext: UseContext = () => {
   const vm = getCurrentInstance()
-  if (!vm) throw new Error('This must be called within a setup function.')
+  if (!vm)
+    throw new Error(`"useContext" must be called within a setup function.`)
 
   return {
     app: vm,

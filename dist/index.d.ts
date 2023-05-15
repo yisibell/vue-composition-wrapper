@@ -13,19 +13,37 @@ interface UseContextReturn {
   params: ComputedRef<Route['params']>
 }
 
-declare function useContext(): UseContextReturn
+type UseContext = () => UseContextReturn
 
-type UseStoreFunc = <S>() => Store<S>
+type UseStore = <S>() => Store<S>
 
-declare const useStore: UseStoreFunc
-declare function useRoute(): ComputedRef<Route>
-declare function useRouter(): VueRouter
-declare function useRouteQuery(): ComputedRef<Route['query']>
-declare function useRouteParams(): ComputedRef<Route['params']>
+type CurrentVueInstance = InstanceType<VueConstructor>
 
-declare function wrapProperty(
-  property: string,
-  makeComputed?: boolean
-): ComputedRef<unknown> | unknown
+type GetCurrentInstance = () => CurrentVueInstance
 
-export { UseStoreFunc, useContext, useRoute, useRouteParams, useRouteQuery, useRouter, useStore, wrapProperty };
+type WrapProperty = <
+  K extends keyof NonNullable<CurrentVueInstance>,
+  T extends boolean = true
+>(
+  property: K,
+  makeComputed?: T
+) => () => T extends true
+  ? ComputedRef<NonNullable<CurrentVueInstance>[K]>
+  : NonNullable<CurrentVueInstance>[K]
+
+type UseRoute = () => ComputedRef<Route>
+type UseRouter = () => VueRouter
+type UseRouteQuery = () => ComputedRef<Route['query']>
+type UseRouteParams = () => ComputedRef<Route['params']>
+
+declare const useContext: UseContext
+declare const useStore: UseStore
+declare const wrapProperty: WrapProperty
+declare const getCurrentInstance: GetCurrentInstance
+
+declare const useRoute: UseRoute
+declare const useRouter: UseRouter
+declare const useRouteQuery: UseRouteQuery
+declare const useRouteParams: UseRouteParams
+
+export { UseStore, getCurrentInstance, useContext, useRoute, useRouteParams, useRouteQuery, useRouter, useStore, wrapProperty };

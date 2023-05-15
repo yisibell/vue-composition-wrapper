@@ -1,4 +1,4 @@
-import type { UseStoreFunc } from '../../types'
+import type { UseStore } from '../interfaces/store'
 import { getCurrentInstance } from './utils'
 
 /**
@@ -20,9 +20,9 @@ import { getCurrentInstance } from './utils'
   })
   ```
  */
-export const useStore: UseStoreFunc = () => {
+export const useStore: UseStore = () => {
   const vm = getCurrentInstance()
-  if (!vm) throw new Error('This must be called within a setup function.')
+  if (!vm) throw new Error(`"useStore" must be called within a setup function.`)
 
   return vm.$store
 }

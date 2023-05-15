@@ -18,6 +18,7 @@ A composition api wrapper for vue(2.x) vue-router(3.x) vuex(3.x).
 - Access **Store** via `useStore` in `setup`.
 - Access **Route** and **Router** via `useRoute` and `useRouter` in `setup`.
 - Access the current **Vue component instance** context via `useContext` in `setup`.
+- Access the current **Vue component instance** context via `getCurrentInstance` in `setup`.
 - Support `Typescript`.
 
 # Installation

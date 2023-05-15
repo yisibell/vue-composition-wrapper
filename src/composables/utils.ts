@@ -1,10 +1,9 @@
-import { VueConstructor } from 'vue'
 import { getCurrentInstance as getVM } from 'vue'
+import type { GetCurrentInstance } from '../interfaces/core'
 
-export function getCurrentInstance() {
+export const getCurrentInstance: GetCurrentInstance = function () {
   const vm = getVM()
+  if (!vm) throw new Error('This must be called within a setup function.')
 
-  if (!vm) return
-
-  return vm.proxy as InstanceType<VueConstructor>
+  return vm.proxy
 }

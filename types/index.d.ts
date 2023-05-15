@@ -1,30 +1,31 @@
-import VueRouter, { Route } from 'vue-router'
-import type { Store } from 'vuex'
-import type { ComputedRef } from 'vue'
-import type { UseContextReturn } from '../src/composables/context'
+import type { UseContext } from '../src/interfaces/context'
+import type { UseStore } from '../src/interfaces/store'
+import type { WrapProperty, GetCurrentInstance } from '../src/interfaces/core'
+import type {
+  UseRoute,
+  UseRouteParams,
+  UseRouteQuery,
+  UseRouter,
+} from '../src/interfaces/router'
 
-declare function useContext(): UseContextReturn
+declare const useContext: UseContext
+declare const useStore: UseStore
+declare const wrapProperty: WrapProperty
+declare const getCurrentInstance: GetCurrentInstance
 
-type UseStoreFunc = <S>() => Store<S>
-
-declare const useStore: UseStoreFunc
-declare function useRoute(): ComputedRef<Route>
-declare function useRouter(): VueRouter
-declare function useRouteQuery(): ComputedRef<Route['query']>
-declare function useRouteParams(): ComputedRef<Route['params']>
-
-declare function wrapProperty(
-  property: string,
-  makeComputed?: boolean
-): ComputedRef<unknown> | unknown
+declare const useRoute: UseRoute
+declare const useRouter: UseRouter
+declare const useRouteQuery: UseRouteQuery
+declare const useRouteParams: UseRouteParams
 
 export {
+  getCurrentInstance,
   useContext,
   useStore,
+  UseStore,
   useRoute,
   useRouter,
   useRouteQuery,
   useRouteParams,
   wrapProperty,
-  UseStoreFunc,
 }
