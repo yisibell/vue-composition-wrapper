@@ -15,7 +15,7 @@ var useContext = function () {
         app: vm,
         store: vm.$store,
         router: vm.$router,
-        route: computed(function () { return vm.$route; }),
+        route: vm.$route,
         query: computed(function () { return vm.$route.query; }),
         params: computed(function () { return vm.$route.params; }),
     };
