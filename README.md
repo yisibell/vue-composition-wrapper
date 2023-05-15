@@ -34,7 +34,7 @@ $ npm i vue-composition-wrapper
 # APIs
 
 | Docs | Version | Support **Vue** version  | Support **vue-router** version |
-| :---: | :---: | :---: |
+| :---: | :---: | :---: | :---: |
 | <a href="./docs/v1.md">Core API for v1</a> | `v1.5.3` | `v2.6` and lower | - |
 | <a href="./docs/v2.md">Core API for v2</a> | `v2.1.4` | `v2.7` | - |
 | <a href="./docs/v3.md">Core API for v3</a> | `v3.0.0` | `v2.7` | `^3.6.5` |
