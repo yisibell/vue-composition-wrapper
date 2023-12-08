@@ -13,6 +13,8 @@
 A **Vue Composition API** wrapper for `vue(2.x)` `vue-router(3.x)` `vuex(3.x)`.
 Let you use **Composition API** more conveniently in `vue 2.x` projects.
 
+- [Release Notes](./CHANGELOG.md)
+
 # Features
 
 - Access **Store** via `useStore` in `setup`.
@@ -94,8 +96,6 @@ import '@/plugins/vue-composition-api.js'
 }
 ```
 
-# CHANGE LOG
 
-see <a href="./CHANGELOG.md" target="_blank">CHANGE LOG</a>.
 
 
