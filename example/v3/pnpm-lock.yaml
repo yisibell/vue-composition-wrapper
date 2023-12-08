@@ -8,8 +8,8 @@ dependencies:
     specifier: ^2.7.14
     version: 2.7.14
   vue-composition-wrapper:
-    specifier: ^3.1.2
-    version: 3.1.2(vue-router@3.6.5)(vue@2.7.14)
+    specifier: ^3.2.0
+    version: 3.2.0(vue-router@3.6.5)(vue@2.7.14)
   vue-router:
     specifier: ^3.6.5
     version: 3.6.5(vue@2.7.14)
@@ -7883,8 +7883,8 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /vue-composition-wrapper@3.1.2(vue-router@3.6.5)(vue@2.7.14):
-    resolution: {integrity: sha512-KxgK/kFA0UL4UJZeAkyowUs1+SHffv+coP7GxMa23r/KbOAWAiAPZROcQNPTaaERiFHYae7gbW31V+W0TBId+g==}
+  /vue-composition-wrapper@3.2.0(vue-router@3.6.5)(vue@2.7.14):
+    resolution: {integrity: sha512-TFF1REEU1moRKH1+P+pflHMGpgQrpHHhay8qA6iymRhtyZVepuA9jZxAmqe+gvt21z5J9CyHDmJn6dgyKF7rVQ==}
     engines: {node: '>=12.x'}
     peerDependencies:
       vue: ^2.7.14
