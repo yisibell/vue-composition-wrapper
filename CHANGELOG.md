@@ -1,6 +1,23 @@
 # CHANGE LOG
 
 
+## v3.2.0
+
+[compare changes](https://github.com/yisibell/vue-composition-wrapper/compare/v3.1.2...v3.2.0)
+
+
+### 🚀 Enhancements
+
+  - Add v3 example and upgrade `useContext` ([67098af](https://github.com/yisibell/vue-composition-wrapper/commit/67098af))
+
+### 🏡 Chore
+
+  - **docs:** Update readme ([0683e75](https://github.com/yisibell/vue-composition-wrapper/commit/0683e75))
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v3.1.2
 
 [compare changes](https://github.com/yisibell/vue-composition-wrapper/compare/v3.1.1...v3.1.2)
