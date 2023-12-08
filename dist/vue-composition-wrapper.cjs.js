@@ -9,38 +9,6 @@ var getCurrentInstance = function () {
     return vm.proxy;
 };
 
-var useContext = function () {
-    var vm = getCurrentInstance();
-    if (!vm)
-        throw new Error("\"useContext\" must be called within a setup function.");
-    return {
-        app: vm,
-        store: vm.$store,
-        router: vm.$router,
-        route: vm.$route,
-        query: vue.computed(function () { return vm.$route.query; }),
-        params: vue.computed(function () { return vm.$route.params; }),
-    };
-};
-
-var wrapProperty = function (property, makeComputed) {
-    return function () {
-        var vm = getCurrentInstance();
-        if (!vm)
-            throw new Error('This must be called within a setup function.');
-        return makeComputed !== false
-            ? vue.computed(function () { return vm[property]; })
-            : vm[property];
-    };
-};
-
-var useStore = function () {
-    var vm = getCurrentInstance();
-    if (!vm)
-        throw new Error("\"useStore\" must be called within a setup function.");
-    return vm.$store;
-};
-
 /*!
   * vue-router v3.6.5
   * (c) 2022 Evan You
@@ -283,14 +251,51 @@ function useLink (props) {
   }
 }
 
-var useRouteQuery = function () {
-    var route = useRoute();
-    return vue.computed(function () { return route.query; });
+var useStore = function () {
+    var vm = getCurrentInstance();
+    if (!vm)
+        throw new Error("\"useStore\" must be called within a setup function.");
+    return vm.$store;
 };
 
 var useRouteParams = function () {
     var route = useRoute();
     return vue.computed(function () { return route.params; });
+};
+
+var useRouteQuery = function () {
+    var route = useRoute();
+    return vue.computed(function () { return route.query; });
+};
+
+var useContext = function () {
+    var vm = getCurrentInstance();
+    if (!vm)
+        throw new Error("\"useContext\" must be called within a setup function.");
+    var store = useStore();
+    var route = useRoute();
+    var router = useRouter();
+    var query = useRouteQuery();
+    var params = useRouteParams();
+    return {
+        app: vm,
+        store: store,
+        router: router,
+        route: route,
+        query: query,
+        params: params,
+    };
+};
+
+var wrapProperty = function (property, makeComputed) {
+    return function () {
+        var vm = getCurrentInstance();
+        if (!vm)
+            throw new Error('This must be called within a setup function.');
+        return makeComputed !== false
+            ? vue.computed(function () { return vm[property]; })
+            : vm[property];
+    };
 };
 
 exports.getCurrentInstance = getCurrentInstance;

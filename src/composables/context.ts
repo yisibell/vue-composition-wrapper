@@ -1,6 +1,9 @@
-import { computed } from 'vue'
-import { getCurrentInstance } from './utils'
 import type { UseContext } from '../interfaces/context'
+import { getCurrentInstance } from './utils'
+import { useRoute, useRouter } from './router'
+import { useStore } from './useStore'
+import useRouteParams from './routeParams'
+import useRouteQuery from './routeQuery'
 
 /**
  * `useContext` will return the Vue context.
@@ -20,13 +23,19 @@ const useContext: UseContext = () => {
   if (!vm)
     throw new Error(`"useContext" must be called within a setup function.`)
 
+  const store = useStore()
+  const route = useRoute()
+  const router = useRouter()
+  const query = useRouteQuery()
+  const params = useRouteParams()
+
   return {
     app: vm,
-    store: vm.$store,
-    router: vm.$router,
-    route: vm.$route,
-    query: computed(() => vm.$route.query),
-    params: computed(() => vm.$route.params),
+    store,
+    router,
+    route,
+    query,
+    params,
   }
 }
 

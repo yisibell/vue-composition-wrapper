@@ -103,3 +103,6 @@ jspm_packages/
 
 # Mac OS Desktop Services Store
 .DS_Store
+
+# build output
+dist/
