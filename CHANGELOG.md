@@ -1,6 +1,23 @@
 # CHANGE LOG
 
 
+## v3.4.0
+
+[compare changes](https://github.com/yisibell/vue-composition-wrapper/compare/v3.2.0...v3.4.0)
+
+### 🚀 Enhancements
+
+- Migrate to vite and fix type exports ([54620ad](https://github.com/yisibell/vue-composition-wrapper/commit/54620ad))
+
+### 🏡 Chore
+
+- Update example ([d3b4eeb](https://github.com/yisibell/vue-composition-wrapper/commit/d3b4eeb))
+- Update readme ([9467c0e](https://github.com/yisibell/vue-composition-wrapper/commit/9467c0e))
+
+### ❤️ Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v3.2.0
 
 [compare changes](https://github.com/yisibell/vue-composition-wrapper/compare/v3.1.2...v3.2.0)
