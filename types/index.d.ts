@@ -1,6 +1,9 @@
-import type { UseContext } from '../src/interfaces/context'
-import type { UseStore } from '../src/interfaces/store'
-import type { WrapProperty, GetCurrentInstance } from '../src/interfaces/core'
+import type { UseContext } from '../src/lib/interfaces/context'
+import type { UseStore } from '../src/lib/interfaces/store'
+import type {
+  WrapProperty,
+  GetCurrentInstance,
+} from '../src/lib/interfaces/core'
 import type {
   UseRoute,
   UseRouteParams,
@@ -9,7 +12,7 @@ import type {
   OnBeforeRouteLeave,
   OnBeforeRouteUpdate,
   UseLink,
-} from '../src/interfaces/router'
+} from '../src/lib/interfaces/router'
 
 declare const useContext: UseContext
 declare const useStore: UseStore
